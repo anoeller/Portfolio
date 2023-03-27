@@ -1,0 +1,153 @@
+/*
+COLOR PALETTE
+  #191716 - Blackish
+  #440d0f - Maroon
+  #c05746 - Coral
+  #ffa400 - Orange/Yellow
+  #8fa998 - SeaGreen
+*/
+
+/******* Global Styles *******/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    color: #191716;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  img {
+    width: 300px;
+  }
+  a {
+    color: #f7fff7;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #440d0f;
+  }
+  h1 {
+    margin: 0;
+    font-size: 80px;
+    line-height: 0.88;
+    font-family: 'Sacramento', cursive;
+  }
+  h2 {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 35px;
+  }
+  h1, h2 {
+    margin: 0;
+  /*   text-align: center; */
+    font-weight: 400;
+  }
+  .content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  .item-details h3 + p {
+    font-style: italic;
+  }
+  .item-details h3 ~ p {
+    margin: 0;
+  }
+  .divider > section{
+    border-bottom: 1px dashed #191716;
+    padding: 25px 0;
+  }
+  .divider > section:last-of-type {
+    border-bottom: none;
+  }
+  
+  /******* Profile *******/
+  header {
+    background: #440d0f;
+    color: #f7fff7; /* text color */
+  }
+  
+  /******* Projects *******/
+  .projects {
+    background: #8fa998;
+  }
+  .project-item {
+    overflow: hidden;
+  }
+  .project-item h3 {
+    margin-top: 0;
+  }
+  
+  /******* Work Exp *******/
+  .work-experience {
+    background: #c05746;
+  }
+  
+  /******* Education *******/
+  .education {
+    background-image: url(https://cnu.edu/_assets/img/cam/greatlawn/night_pano/christopher-newport-university-campus-1200x675.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+  }
+  .edu-points {
+    background-color: rgba(255,255,255, 0.55);
+  }
+  .coursera {
+    color: #191716
+  }
+  
+  /******* Contact Info *******/
+  footer {
+    background: #ffa400;
+  }
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .contact-list a { /* just the links */
+    padding: 18px;
+    display: inline-block;
+  }
+  
+  /******* Responsive *******/
+  @media screen and (min-width:750px) {
+    header, footer {
+      text-align: center;
+    }
+     .project-item img {
+     float:left;
+     margin-right: 20px;
+    }
+    .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    }
+    .contact-list {
+    display: flex;  /* items aligned horizontally */
+    justify-content: center; /* centers list */
+  
+    }
+  }
+  @media screen and (max-width:749px) {
+    h1 {
+      font-size: 65px;
+      line-height: 0.7;
+      margin-bottom: 10px;
+    }
+    .contact-list a {
+      padding: 5px;
+    }
+  }
